@@ -20,6 +20,7 @@ public class UserController {
 	public String test(HttpServletRequest request, Model model) {
 		int userId = Integer.parseInt(request.getParameter("id"));
 		System.out.println("userId:" + userId);
+
 		User user = null;
 		if (userId == 1) {
 			user = new User();
